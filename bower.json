@@ -1,0 +1,24 @@
+{
+  "name": "demo-news",
+  "authors": [
+    "Eduardo Sanchez <sanchez.eduardo@synergy101.co.jp>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "angular-devise": "angular-devise#~1.1.0"
+  }
+}
