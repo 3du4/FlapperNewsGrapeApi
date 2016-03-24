@@ -11,6 +11,16 @@ module API
           Post.all
         end
 
+        desc 'Get specific post'
+        get '/:id', root: :posts do
+          Post.find(params[:id])
+        end
+
+        desc 'Delete specific post'
+        delete '/:id', root: :posts do
+          post = Post.find(params[:id])
+          post.delete
+        end
 
         desc 'create new post'
         post '', root: :posts do
