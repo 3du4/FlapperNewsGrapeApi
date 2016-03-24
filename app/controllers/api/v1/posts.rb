@@ -4,10 +4,13 @@ module API
       include API::V1::Defaults
 
       resource :posts do
+        
+
         desc 'Return all posts'
         get '', root: :posts do
           Post.all
         end
+
 
         desc 'create new post'
         post '', root: :posts do
@@ -17,6 +20,7 @@ module API
           end
           Post.create({title: params[:title], content: params[:content]})
         end
+
 
         desc 'upvote'
         put '/:id', root: :posts do
