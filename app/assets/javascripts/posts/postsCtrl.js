@@ -10,7 +10,7 @@ angular.module('newsDemo')
       if($scope.body === '') { return; }
       posts.addComment(post.id, {
         body: $scope.body,
-        author: 'user',
+        author: 'user'
       }).success(function(comment) {
         $scope.post.comments.push(comment);
       });

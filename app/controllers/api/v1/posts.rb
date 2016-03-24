@@ -12,10 +12,10 @@ module API
         desc 'create new post'
         post '', root: :posts do
           params do
-            requires :link, type: String, desc: 'link'
-            requires :title, type: String, desc: 'link'
+            requires :content, type: String, desc: 'content'
+            requires :title, type: String, desc: 'title'
           end
-          Post.create({title: params[:title], link: params[:link]})
+          Post.create({title: params[:title], content: params[:content]})
         end
 
         desc 'upvote'
